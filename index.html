@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zéro Nuisibles M3D | Dératisation & Désinsectisation à Alger</title>
+<meta name="description" content="Zéro Nuisibles M3D - Extermination professionnelle de nuisibles (rats, punaises de lit, cafards, moustiques) à Dely Ibrahim, Alger. Intervention rapide, 06h-22h30.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          heading: ['Poppins', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+        },
+        colors: {
+          primary: {
+            DEFAULT: '#0a5c66',
+            light: '#127a86',
+            dark: '#073f46',
+          },
+          accent: {
+            DEFAULT: '#2fbf8f',
+            light: '#5fd4ab',
+          },
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; }
+  h1, h2, h3, h4, .font-heading { font-family: 'Poppins', sans-serif; }
+
+  .hero-bg {
+    background:
+      radial-gradient(circle at 15% 20%, rgba(47,191,143,0.20), transparent 40%),
+      radial-gradient(circle at 85% 0%, rgba(10,92,102,0.35), transparent 45%),
+      linear-gradient(135deg, #073f46 0%, #0a5c66 55%, #0f6b76 100%);
+  }
+
+  .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 35px -10px rgba(10,92,102,0.25); }
+
+  .btn-pulse {
+    box-shadow: 0 0 0 0 rgba(47,191,143,0.55);
+    animation: pulse 2.2s infinite;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(47,191,143,0.55); }
+    70%  { box-shadow: 0 0 0 14px rgba(47,191,143,0); }
+    100% { box-shadow: 0 0 0 0 rgba(47,191,143,0); }
+  }
+
+  #mobile-menu { transition: max-height 0.35s ease, opacity 0.3s ease; overflow: hidden; }
+
+  .star { color: #f5b301; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- ============ NAVBAR ============ -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="flex items-center justify-between h-18 py-3">
+      <!-- Logo -->
+      <a href="#accueil" class="flex items-center gap-2">
+        <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-primary text-white">
+          <i class="fa-solid fa-shield-virus text-xl"></i>
+        </span>
+        <span class="font-heading font-extrabold text-lg sm:text-xl text-primary leading-tight">
+          Zéro Nuisibles<span class="text-accent"> M3D</span>
+        </span>
+      </a>
+
+      <!-- Liens desktop -->
+      <nav class="hidden md:flex items-center gap-8 font-heading font-medium text-slate-700">
+        <a href="#accueil" class="hover:text-accent transition-colors">Accueil</a>
+        <a href="#services" class="hover:text-accent transition-colors">Services</a>
+        <a href="#avis" class="hover:text-accent transition-colors">Avis</a>
+        <a href="#contact" class="hover:text-accent transition-colors">Contact</a>
+      </nav>
+
+      <!-- CTA desktop -->
+      <a href="tel:+213563825628" class="hidden md:flex items-center gap-2 bg-accent hover:bg-accent-light text-white font-heading font-semibold px-5 py-2.5 rounded-full transition-colors shadow-md shadow-accent/30">
+        <i class="fa-solid fa-phone"></i>
+        Appeler maintenant
+      </a>
+
+      <!-- Bouton burger mobile -->
+      <button id="burger-btn" class="md:hidden text-primary text-2xl" aria-label="Ouvrir le menu">
+        <i class="fa-solid fa-bars" id="burger-icon"></i>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="md:hidden max-h-0 opacity-0">
+      <nav class="flex flex-col gap-1 pb-5 font-heading font-medium text-slate-700">
+        <a href="#accueil" class="py-2.5 px-2 rounded-lg hover:bg-slate-100">Accueil</a>
+        <a href="#services" class="py-2.5 px-2 rounded-lg hover:bg-slate-100">Services</a>
+        <a href="#avis" class="py-2.5 px-2 rounded-lg hover:bg-slate-100">Avis</a>
+        <a href="#contact" class="py-2.5 px-2 rounded-lg hover:bg-slate-100">Contact</a>
+        <a href="tel:+213563825628" class="mt-2 flex items-center justify-center gap-2 bg-accent text-white font-semibold px-5 py-3 rounded-full">
+          <i class="fa-solid fa-phone"></i> Appeler maintenant
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SECTION HERO ============ -->
+<section id="accueil" class="hero-bg pt-32 pb-24 sm:pt-40 sm:pb-32 text-white relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+    <div class="max-w-2xl">
+      <span class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-accent-light text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+        <i class="fa-solid fa-star star"></i> 4.8/5 sur Google — 16 avis
+      </span>
+      <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
+        Extermination professionnelle des nuisibles à Alger
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-200 mb-10 leading-relaxed">
+        Rats, punaises de lit, cafards, moustiques : une équipe formée, des produits homologués et une intervention rapide pour retrouver un logement propre, sain et serein.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:+213563825628" class="btn-pulse flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-white font-heading font-semibold px-7 py-4 rounded-full transition-colors">
+          <i class="fa-solid fa-phone"></i> Appeler le 0563 82 56 28
+        </a>
+        <a href="#contact" class="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-heading font-semibold px-7 py-4 rounded-full transition-colors">
+          <i class="fa-solid fa-clipboard-list"></i> Demander un devis
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Forme décorative -->
+  <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-accent/20 rounded-full blur-3xl"></div>
+</section>
+
+<!-- ============ SECTION SERVICES ============ -->
+<section id="services" class="py-20 sm:py-28 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-accent font-heading font-semibold uppercase tracking-wide text-sm">Nos Prestations</span>
+      <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary-dark mt-3 mb-4">
+        Nos Services — L'Offre 3D Complète
+      </h2>
+      <p class="text-slate-600">
+        Trois expertises complémentaires pour un environnement sain, sûr et durablement protégé.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Carte 1 : Dératisation -->
+      <div class="card-hover bg-white rounded-2xl p-7 shadow-md border border-slate-100">
+        <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-primary/10 text-primary mb-5">
+          <i class="fa-solid fa-mouse text-2xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-lg mb-2">1. Dératisation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Élimination des souris et rats, un danger silencieux : transmission de maladies, fils électriques rongés, risques d'incendie et reproduction très rapide.
+        </p>
+        <ul class="text-sm text-slate-500 space-y-1.5">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-accent"></i> Méthodes sécurisées</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-accent"></i> Intervention ciblée</li>
+        </ul>
+      </div>
+
+      <!-- Carte 2 : Désinsectisation -->
+      <div class="card-hover bg-white rounded-2xl p-7 shadow-md border border-slate-100">
+        <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-primary/10 text-primary mb-5">
+          <i class="fa-solid fa-bug text-2xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-lg mb-2">2. Désinsectisation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Traitement contre les cafards, fourmis, moustiques, mouches et punaises de lit, avec traitement ciblé des zones sensibles.
+        </p>
+        <ul class="text-sm text-slate-500 space-y-1.5">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-accent"></i> Zones sensibles traitées</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-accent"></i> Résultat durable</li>
+        </ul>
+      </div>
+
+      <!-- Carte 3 : Désinfection -->
+      <div class="card-hover bg-white rounded-2xl p-7 shadow-md border border-slate-100">
+        <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-primary/10 text-primary mb-5">
+          <i class="fa-solid fa-spray-can-sparkles text-2xl"></i>
+        </div>
+        <h3 class="font-heading font-bold text-lg mb-2">3. Désinfection</h3>
+        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+          Élimination des bactéries et des mauvaises odeurs pour retrouver un environnement sain, à la maison comme au travail.
+        </p>
+        <ul class="text-sm text-slate-500 space-y-1.5">
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-accent"></i> Élimination des bactéries</li>
+          <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-accent"></i> Air assaini</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION AVIS ============ -->
+<section id="avis" class="py-20 sm:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-accent font-heading font-semibold uppercase tracking-wide text-sm">Témoignages</span>
+      <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary-dark mt-3 mb-4">
+        Ce que disent nos clients
+      </h2>
+      <div class="flex items-center justify-center gap-2 text-lg">
+        <span class="star">⭐⭐⭐⭐⭐</span>
+        <span class="font-heading font-semibold text-slate-700">4.8/5</span>
+        <span class="text-slate-500 text-sm">(16 avis Google)</span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Avis 1 -->
+      <div class="card-hover bg-slate-50 rounded-2xl p-7 border border-slate-100 flex flex-col">
+        <div class="star text-lg mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-slate-600 italic leading-relaxed mb-6 flex-grow">
+          « Je remercie beaucoup zéro nuisibles m3D pour leur excellent travail contre punaise de lit et les rats. Je suis très satisfaite, bonne continuation. »
+        </p>
+        <div class="flex items-center gap-3 mt-auto">
+          <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-heading font-bold">R</div>
+          <span class="font-heading font-semibold text-slate-700">Rayane Minou</span>
+        </div>
+      </div>
+
+      <!-- Avis 2 -->
+      <div class="card-hover bg-slate-50 rounded-2xl p-7 border border-slate-100 flex flex-col">
+        <div class="star text-lg mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-slate-600 italic leading-relaxed mb-6 flex-grow">
+          « Je vous remercie zéro nuisibles pour la prestation, après deux mois elhmdoulh rayhna men mochekil, je valide bonne continuation. »
+        </p>
+        <div class="flex items-center gap-3 mt-auto">
+          <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-heading font-bold">M</div>
+          <span class="font-heading font-semibold text-slate-700">Moussa Saidi</span>
+        </div>
+      </div>
+
+      <!-- Avis 3 -->
+      <div class="card-hover bg-slate-50 rounded-2xl p-7 border border-slate-100 flex flex-col">
+        <div class="star text-lg mb-4">⭐⭐⭐⭐⭐</div>
+        <p class="text-slate-600 italic leading-relaxed mb-6 flex-grow">
+          « Meilleure prestation contre la dératisation, merci zéro nuisibles m3d betawfi9. »
+        </p>
+        <div class="flex items-center gap-3 mt-auto">
+          <div class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center font-heading font-bold">M</div>
+          <span class="font-heading font-semibold text-slate-700">Miral Mina</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECTION CONTACT ============ -->
+<section id="contact" class="py-20 sm:py-28 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-accent font-heading font-semibold uppercase tracking-wide text-sm">Une urgence nuisible ?</span>
+      <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-primary-dark mt-3 mb-4">
+        Contact &amp; Localisation
+      </h2>
+      <p class="text-slate-600">
+        Contactez-nous dès maintenant pour un diagnostic gratuit à Dely Ibrahim et ses environs.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+
+      <!-- Formulaire -->
+      <div class="lg:col-span-3 bg-white rounded-2xl shadow-md border border-slate-100 p-7 sm:p-9">
+        <h3 class="font-heading font-bold text-xl text-primary-dark mb-6">Demander mon diagnostic gratuit</h3>
+        <form id="contact-form" class="space-y-5">
+          <div>
+            <label for="nom" class="block text-sm font-heading font-medium text-slate-700 mb-1.5">Nom complet</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom" required
+              class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition">
+            <p class="hidden text-xs text-red-500 mt-1" data-error-for="nom">Merci d'indiquer votre nom.</p>
+          </div>
+
+          <div>
+            <label for="telephone" class="block text-sm font-heading font-medium text-slate-700 mb-1.5">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="0X XX XX XX XX" required
+              class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition">
+            <p class="hidden text-xs text-red-500 mt-1" data-error-for="telephone">Merci d'indiquer un numéro de téléphone valide.</p>
+          </div>
+
+          <div>
+            <label for="intervention" class="block text-sm font-heading font-medium text-slate-700 mb-1.5">Type d'intervention</label>
+            <select id="intervention" name="intervention" required
+              class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition bg-white">
+              <option value="" selected disabled>Sélectionnez une option</option>
+              <option value="deratisation">Dératisation (rats, souris)</option>
+              <option value="desinsectisation">Désinsectisation (cafards, punaises, moustiques...)</option>
+              <option value="desinfection">Désinfection</option>
+              <option value="autre">Autre / Je ne sais pas</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-heading font-medium text-slate-700 mb-1.5">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Décrivez votre situation (localisation, urgence, etc.)"
+              class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full flex items-center justify-center gap-2 bg-accent hover:bg-accent-light text-white font-heading font-semibold px-6 py-4 rounded-lg transition-colors">
+            <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande
+          </button>
+
+          <p id="form-success" class="hidden text-sm text-center text-primary bg-primary/10 rounded-lg py-3 px-4">
+            Merci ! Votre demande a bien été envoyée, nous vous recontacterons rapidement.
+          </p>
+        </form>
+      </div>
+
+      <!-- Infos + carte -->
+      <div class="lg:col-span-2 flex flex-col gap-6">
+        <div class="bg-primary-dark text-white rounded-2xl p-7 space-y-6">
+          <div class="flex items-start gap-4">
+            <span class="flex items-center justify-center w-11 h-11 rounded-lg bg-white/10 text-accent-light shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold mb-1">Adresse</h4>
+              <p class="text-sm text-slate-300">Bois des cars 2, Villa 32, Dely Ibrahim, Alger (16320)</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="flex items-center justify-center w-11 h-11 rounded-lg bg-white/10 text-accent-light shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold mb-1">Téléphones</h4>
+              <p class="text-sm text-slate-300 space-x-2">
+                <a href="tel:0563825628" class="hover:text-white transition-colors">0563 82 56 28</a>
+                <span>&middot;</span>
+                <a href="tel:0656996392" class="hover:text-white transition-colors">0656 99 63 92</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="flex items-center justify-center w-11 h-11 rounded-lg bg-white/10 text-accent-light shrink-0">
+              <i class="fa-solid fa-gift"></i>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold mb-1">Offre spéciale</h4>
+              <p class="text-sm text-slate-300">Diagnostic gratuit sur simple appel</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="flex items-center justify-center w-11 h-11 rounded-lg bg-white/10 text-accent-light shrink-0">
+              <i class="fa-solid fa-share-nodes"></i>
+            </span>
+            <div>
+              <h4 class="font-heading font-semibold mb-1">Réseaux sociaux</h4>
+              <p class="text-sm text-slate-300 flex flex-col gap-1">
+                <a href="https://www.facebook.com/people/D%C3%A9ratisation-d%C3%A9sinsectisation-d%C3%A9sinfection-M3D/61567163470664/?rdid=QdnUEOZK1tF2Xnc9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1SrzKeHVua%2F" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2">
+                  <i class="fa-brands fa-facebook"></i> Suivez-nous sur Facebook
+                </a>
+                <a href="https://www.instagram.com/zero_nuisible_m3d/" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-2">
+                  <i class="fa-brands fa-instagram"></i> Suivez-nous sur Instagram
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carte Google Maps -->
+        <div class="rounded-2xl overflow-hidden shadow-md border border-slate-100 h-64 lg:h-72">
+          <iframe
+            src="https://maps.google.com/maps?q=Z%C3%A9ro+Nuisibles+M3D,+Dely+Ibrahim,+Alger&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            class="w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localisation Zéro Nuisibles M3D">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-primary-dark text-slate-300 py-14">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Logo + description -->
+      <div class="lg:col-span-1">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-accent text-white">
+            <i class="fa-solid fa-shield-virus"></i>
+          </span>
+          <span class="font-heading font-extrabold text-white text-lg">Zéro Nuisibles M3D</span>
+        </div>
+        <p class="text-sm text-slate-400 leading-relaxed">
+          Votre partenaire de confiance contre les nuisibles à Alger : hygiène, sécurité et tranquillité garanties.
+        </p>
+      </div>
+
+      <!-- Adresse -->
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Adresse</h4>
+        <p class="text-sm text-slate-400 flex items-start gap-2">
+          <i class="fa-solid fa-location-dot mt-1 text-accent"></i>
+          Bois des cars 2, villa 32,<br>Dely Ibrahim, Alger (16320)
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Contact</h4>
+        <ul class="text-sm text-slate-400 space-y-2">
+          <li class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-accent"></i>
+            <a href="tel:+213563825628" class="hover:text-white transition-colors">0563 82 56 28</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-brands fa-facebook text-accent"></i>
+            <a href="#" target="_blank" rel="noopener" class="hover:text-white transition-colors">Zéro Nuisibles M3D</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Horaires -->
+      <div>
+        <h4 class="font-heading font-semibold text-white mb-4">Horaires</h4>
+        <p class="text-sm text-slate-400 flex items-start gap-2">
+          <i class="fa-solid fa-clock mt-1 text-accent"></i>
+          Tous les jours<br>06h00 - 22h30
+        </p>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 mt-10 pt-6 text-center text-xs text-slate-500">
+      &copy; <span id="year"></span> Zéro Nuisibles M3D — Tous droits réservés.
+    </div>
+  </div>
+</footer>
+
+<!-- ============ JAVASCRIPT ============ -->
+<script>
+  // Toggle du menu burger sur mobile
+  const burgerBtn = document.getElementById('burger-btn');
+  const burgerIcon = document.getElementById('burger-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
+  let menuOpen = false;
+
+  burgerBtn.addEventListener('click', () => {
+    menuOpen = !menuOpen;
+    if (menuOpen) {
+      mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+      mobileMenu.style.opacity = '1';
+      burgerIcon.classList.remove('fa-bars');
+      burgerIcon.classList.add('fa-xmark');
+    } else {
+      mobileMenu.style.maxHeight = '0px';
+      mobileMenu.style.opacity = '0';
+      burgerIcon.classList.remove('fa-xmark');
+      burgerIcon.classList.add('fa-bars');
+    }
+  });
+
+  // Fermer le menu mobile au clic sur un lien
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      menuOpen = false;
+      mobileMenu.style.maxHeight = '0px';
+      mobileMenu.style.opacity = '0';
+      burgerIcon.classList.remove('fa-xmark');
+      burgerIcon.classList.add('fa-bars');
+    });
+  });
+
+  // Année dynamique dans le footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Validation et envoi simulé du formulaire de contact
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let valid = true;
+
+      const nomInput = document.getElementById('nom');
+      const nomError = document.querySelector('[data-error-for="nom"]');
+      if (!nomInput.value.trim()) {
+        nomError.classList.remove('hidden');
+        nomInput.classList.add('border-red-400');
+        valid = false;
+      } else {
+        nomError.classList.add('hidden');
+        nomInput.classList.remove('border-red-400');
+      }
+
+      const telInput = document.getElementById('telephone');
+      const telError = document.querySelector('[data-error-for="telephone"]');
+      const telRegex = /^0[0-9]{9}$/;
+      if (!telRegex.test(telInput.value.replace(/\s/g, ''))) {
+        telError.classList.remove('hidden');
+        telInput.classList.add('border-red-400');
+        valid = false;
+      } else {
+        telError.classList.add('hidden');
+        telInput.classList.remove('border-red-400');
+      }
+
+      if (!valid) return;
+
+      // Pas d'envoi serveur réel : confirmation simulée
+      document.getElementById('form-success').classList.remove('hidden');
+      contactForm.reset();
+    });
+  }
+</script>
+
+</body>
+</html>
